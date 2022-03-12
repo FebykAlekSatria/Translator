@@ -1,13 +1,24 @@
 {
   "name": "translator",
   "private": true,
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.9"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.6",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "axios": "^0.26.1",
+    "framer-motion": "^6.2.8",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
