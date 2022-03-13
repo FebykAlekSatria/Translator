@@ -36,7 +36,7 @@ export default function Home() {
         setTranslate(res.data.translations[0].translation)
       })
     }
-  }, [value])
+  }, [value, from, to])
   return (
     <div>
       <Head>
